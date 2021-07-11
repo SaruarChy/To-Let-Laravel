@@ -17,3 +17,5 @@ Route::get('/', function () {
     return redirect('home');
 });
 Route::view("home", "home");
+Route::view("signup", "register");
+Route::view("login", "login");

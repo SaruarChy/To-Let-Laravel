@@ -20,3 +20,23 @@ text-align:center;
 	width:80%;
 	margin-left:10%;
 }
+.register , .login{
+	margin:200px 0px;
+}
+.register .input , 
+.login .input{
+	margin-bottom:20px;
+}
+.register .input input[type=text],
+.register .input input[type=email],
+.register .input input[type=password],
+.login .input input[type=email],
+.login .input input[type=password]{
+	width:100%;
+
+	outline:none;
+}
+.register .input label , 
+.login .input .label{
+	margin-bottom:5px;
+}
