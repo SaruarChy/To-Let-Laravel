@@ -14,6 +14,7 @@
 <body>
     {{View::make('header')}}
     @yield("home")
+    @yield("author")
     @yield("register")
     @yield("login")
     {{View::make('footer')}}
