@@ -17,7 +17,7 @@
             <a href="logout">logout</a>
             @else
             <a href="login">login</a>
-            <a href="register">sign up</a>
+            <a href="signup">sign up</a>
             @endif
 
         </div>

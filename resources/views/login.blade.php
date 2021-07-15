@@ -15,9 +15,9 @@
 
     @endif
 
-    <div class="row flex">
+    <div class="row flex" style="font-family: Roboto, sans-serif;">
         <div class="register col-sm-12 col-md-6 col-xm-12 mx-auto my-auto">
-            <form action="login" method="POST">
+            <form action="{{url('login')}}" method="POST">
                 @csrf
 
                 <div class="input">

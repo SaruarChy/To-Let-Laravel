@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserData;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect('home');
 });
+Route::get('logout', function(){
+    session()->forget('user');
+    return view('login');
+});
 Route::view("home", "home");
 Route::view("signup", "register");
 Route::view("login", "login");
+Route::post("register", [UserData::class,"register"]);
+Route::post("login", [UserData::class,"login"]);
