@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Productdata;
+use Illuminate\Support\Facades\DB;
 
 class ProductCon extends Controller
 {
@@ -12,5 +13,17 @@ class ProductCon extends Controller
     {
         $data =  Productdata::all();
         return view('home', ['data' => $data]);
+    }
+
+    //product details
+    function detail($id)
+    {
+
+        $data =  DB::table('productdata')
+            ->join('user_data', 'productdata.userid', '=', 'user_data.id')
+            ->where('productdata.id', $id)
+            ->select('productdata.*', 'user_data.*')
+            ->first();
+        return view('detail', ['item' => $data]);
     }
 }
