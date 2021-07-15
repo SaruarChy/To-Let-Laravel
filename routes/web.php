@@ -35,3 +35,4 @@ Route::get("remove/{id}", [UserData::class, 'remove']);
 Route::get("edit/{id}", [UserData::class, 'edit']);
 Route::post("update", [UserData::class, 'update']);
 Route::get("detail/{id}", [ProductCon::class, 'detail']);
+Route::get("search", [ProductCon::class, 'search']);

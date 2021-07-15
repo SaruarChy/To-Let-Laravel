@@ -26,4 +26,11 @@ class ProductCon extends Controller
             ->first();
         return view('detail', ['item' => $data]);
     }
+
+    //search results for products
+    function search(Request $req)
+    {
+        $item = Productdata::where('address', 'like', '%' . $req->search .  '%')->select("productdata.*")->get();
+        return view("search", ['data' => $item]);
+    }
 }

@@ -18,6 +18,7 @@
     @yield("register")
     @yield("login")
     @yield("detail")
+    @yield("search")
     {{View::make('footer')}}
 </body>
 
