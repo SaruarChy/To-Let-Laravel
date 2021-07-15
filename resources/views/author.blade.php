@@ -7,8 +7,8 @@ use App\Http\Controllers\UserData;
 $auth_data = UserData::authordata();
 ?>
 <section class="author_account">
-    <div class="row container auth_data">
-        <div class="col-sm-12 col-md-6 col-offset-3">
+    <div class="row container auth_data" style="font-family: Roboto, sans-serif;">
+        <div class="col-sm-12 col-md-6 col-offset-3" style="font-family: Roboto, sans-serif;">
             <h6>Advertiser : {{$auth_data['name']}}</h6>
             <h6>Email : {{$auth_data['email']}}</h6>
             <h6>Mobile : {{$auth_data['mobile']}}</h6>
@@ -19,7 +19,7 @@ $auth_data = UserData::authordata();
     <form action="{{ url('post') }}" method="POST" enctype="multipart/form-data">
 
         @csrf
-        <div class="container">
+        <div class="container" style="font-family: Roboto, sans-serif;">
 
             <div class="post_here">
                 <h3 style="text-align:center; padding:10px 0px; margin-bottom:80px;">Create your Ad</h3> <hr>
@@ -69,7 +69,7 @@ $auth_data = UserData::authordata();
         </div>
 
     </form>
-    <div class="list_of_list" style="margin:80px 0px;">
+    <div class="list_of_list" style="margin:80px 0px; font-family: Roboto, sans-serif;">
         <h3 style="text-align:center; padding:10px 0px; margin-bottom:80px;">Your post</h3>
         @foreach($items as $item)
         <div style="width:80%; margin:0 auto">

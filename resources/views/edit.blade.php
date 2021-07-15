@@ -11,7 +11,7 @@ $auth_data = UserData::authordata();
     <form action="{{ url('update') }}" method="POST" enctype="multipart/form-data">
 
         @csrf
-        <div class="container">
+        <div class="container" style="font-family: Roboto, sans-serif;">
 
             <div class="post_here">
                 <h3 style="text-align:center; padding:10px 0px; margin-bottom:80px;">Edit post</h3>

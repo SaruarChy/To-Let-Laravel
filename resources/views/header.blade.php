@@ -5,7 +5,7 @@
         </div>
         <div class="col-md-4 col-sm-12 menu">
             <a href="{{url('home')}}">Home</a>
-            <a href="{{url('category')}}">Category</a>
+            <!-- <a href="{{url('category')}}">Category</a> -->
             <a href="{{url('about_us')}}">About Us</a>
             
         </div>

@@ -40,3 +40,40 @@ text-align:center;
 .login .input .label{
 	margin-bottom:5px;
 }
+.home , .all_detail{
+	margin-top:100px !important;
+}
+.home .home_container{
+	padding:100px 0px;
+}
+.home .house_detail{
+	margin-bottom:30px;
+	
+	
+}
+.home .house_detail img{
+	height:250px !important;
+	border-radius:5px;
+}
+
+.author_accont{
+	margin:100px 0px;
+}
+.author_account .auth_data{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.auth_list{
+	border-bottom:1px solid gray;
+	margin-bottom:10px;
+}
+.auth_list .list_img img{
+	width:300px;
+}
+
+.post_here{
+	margin:0px 0px;
+}
+.post_here .input_div{
+	margin:15px 0px;
+}
