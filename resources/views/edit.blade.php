@@ -25,30 +25,30 @@ $auth_data = UserData::authordata();
 
 
                 <div class="input_div" style="margin:25px 0px;" style="margin:25px 0px; ">
-                    Address:<input type="text" name="address" placeholder="{{$data->address}}">
+                    Address:<input type="text" name="address" value="{{$data->address}}">
 
                 </div>
                 <div class="input_div" style="margin:25px 0px;">
-                    Number of Rooms : <input type="text" name="num_of_room" placeholder="{{$data->num_of_room}}">
+                    Number of Rooms : <input type="text" name="num_of_room" value="{{$data->num_of_room}}">
                 </div>
                 <div class="input_div" style="margin:25px 0px;">
-                    Size : <input type="text" name="status" placeholder="{{$data->status}}">
+                    Size : <input type="text" name="status" value="{{$data->status}}">
                     <p style = "display:inline; font-size:24px">sqft</p>
                 </div>
                 <div class="input_div" style="margin:25px 0px;">
                     <label for="category">Category : </label>
-                    <select name = "category" placeholder="{{$data->home_type}}">
+                    <select name = "category" value="{{$data->home_type}}">
                         <option value="Residential">Residential</option>
                         <option value="Commercial">Commercial</option>			
                     </select>
                 </div>
                 
                 <div class="input_div" style="margin:25px 0px;">
-                    Per month rent : <input type="text" name="price" placeholder="{{$data->price}}">
+                    Per month rent : <input type="text" name="price" " value="{{$data->price}}">
                     <p style = "display:inline; font-size:24px">bdtk</p>
                 </div>
                 <div class="input_div" style="margin:25px 0px;">
-                    Description : <br><input type="textarea" name="detail" style="width:350px; height:100px;" placeholder="{{$data->detail}}">
+                    Description : <br><input type="textarea" name="detail" style="width:350px; height:100px;" value="{{$data->detail}}">
                 </div>
                 <div class="input_div" style="margin:25px 0px;" style="margin:25px 0px;">
                     Image: <input type="file" value="Image" name="image">
